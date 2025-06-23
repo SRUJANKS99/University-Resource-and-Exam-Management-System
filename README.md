@@ -58,6 +58,18 @@ A centralized **web-based portal** for managing university academic resources, e
 > Navigation optimized for admin control.
 
 ---
+# 1️⃣ Clone the repository
+git clone https://github.com/SRUJANKS99/University-Resource-and-Exam-Management-System.git
+
+# 2️⃣ Navigate into the project directory
+cd University-Resource-and-Exam-Management-System
+
+# 3️⃣ Run the Spring Boot backend
+./mvnw spring-boot:run
+
+# ✅ Ensure MySQL is running and database is configured
+
+----
 
 ## 🔄 System Flow
 
@@ -77,13 +89,3 @@ F --> G[Results Generated]
 
 
 
-# 1️⃣ Clone the repository
-git clone https://github.com/SRUJANKS99/University-Resource-and-Exam-Management-System.git
-
-# 2️⃣ Navigate into the project directory
-cd University-Resource-and-Exam-Management-System
-
-# 3️⃣ Run the Spring Boot backend
-./mvnw spring-boot:run
-
-# ✅ Ensure MySQL is running and database is configured
