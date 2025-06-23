@@ -53,15 +53,7 @@ A centralized **web-based portal** for managing university academic resources, e
 
 ---
 
-### 📊 Quiz Attempts & Results
-![Attempts](https://raw.githubusercontent.com/SRUJANKS99/University-Resource-and-Exam-Management-System/main/7afbaf37-9988-4b16-b6f2-0059f79bbb2e.png)  
-> Attempts and scores tracked by quiz.
 
----
-
-### 🧭 Sidebar Navigation
-![Sidebar 1](https://raw.githubusercontent.com/SRUJANKS99/University-Resource-and-Exam-Management-System/main/77d3a21f-fcc2-460a-99c6-af5aaa35480b7.png)  
-> Sidebar for managing quizzes, categories, users, and logout.
 
 ![Sidebar 2](https://raw.githubusercontent.com/SRUJANKS99/University-Resource-and-Exam-Management-System/main/5cf8b677-7a2a-4f15-b41b-3fe48edcb9c2.png)  
 > Navigation optimized for admin control.
@@ -70,11 +62,16 @@ A centralized **web-based portal** for managing university academic resources, e
 
 ## 🔄 System Flow
 
-```mermaid
 graph TD
 A[Login Page] --> B{User Role}
 B -- Admin --> C[Dashboard]
+C --> C1[Add Quiz]
+C --> C2[Add Category]
+C --> C3[View Student Results]
+C --> C4[Provide Feedback]
+
 B -- Student --> D[Instructions Page]
 D --> E[Start Quiz]
 E --> F[Submit Quiz]
 F --> G[Results Generated]
+
