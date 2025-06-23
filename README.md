@@ -72,20 +72,19 @@ cd University-Resource-and-Exam-Management-System
 ----
 
 ## 🔄 System Flow
-
 ```mermaid
 graph TD
-A[Login Page] --> B{User Role}
-B -- Admin --> C[Dashboard]
-C --> C1[Add Quiz]
-C --> C2[Add Category]
-C --> C3[View Student Results]
-C --> C4[Provide Feedback]
+    A[Login Page] --> B{User Role}
+    B -->|Admin| C[Dashboard]
+    C --> C1[Add Quiz]
+    C --> C2[Add Category]
+    C --> C3[View Student Results]
+    C --> C4[Provide Feedback]
 
-B -- Student --> D[Instructions Page]
-D --> E[Start Quiz]
-E --> F[Submit Quiz]
-F --> G[Results Generated]
+    B -->|Student| D[Instructions Page]
+    D --> E[Start Quiz]
+    E --> F[Submit Quiz]
+    F --> G[Results Generated]
 
 
 
