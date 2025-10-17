@@ -1,0 +1,188 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f3e5f5; /* Light Purple */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #7e57c2; /* Purple */
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .logo-icon {
+    margin-right: 10px;
+}
+
+.navbar .nav-buttons a {
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.navbar .btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.navbar .btn-primary {
+    background-color: #8e24aa; /* Deep Purple */
+    color: white;
+    border: 2px solid #8e24aa;
+}
+
+.navbar .btn-outline:hover,
+.navbar .btn-primary:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+    background-color: #9c27b0; /* Purple */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #d81b60; /* Pinkish Purple */
+    border: 2px solid #d81b60;
+}
+
+.hero .btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.hero .btn-primary:hover {
+    background-color: #c2185b; /* Darker Pink */
+}
+
+.hero .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: #f3e5f5; /* Light Purple */
+}
+
+.feature-card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #8e24aa; /* Purple */
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #6a1b9a; /* Dark Purple */
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Signup Link */
+.signup-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #8e24aa; /* Purple */
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+}
