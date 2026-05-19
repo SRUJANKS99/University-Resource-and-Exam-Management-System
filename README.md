@@ -1,28 +1,69 @@
 # 🎓 University Resource & Exam Management System
 
-A centralized **web-based portal** for managing university academic resources, examination schedules, student results, and department documents.
+A full-stack web application for managing university examinations, quiz categories, questions, and student results — built with **Angular** on the frontend and **Spring Boot** on the backend, secured with **JWT authentication**.
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [System Architecture](#️-system-architecture)
+- [Project Structure](#-project-structure)
+- [API Endpoints](#-api-endpoints)
+- [Getting Started](#-getting-started)
+- [Screenshots](#️-screenshots)
+- [System Flow](#-system-flow)
+- [Future Improvements](#-future-improvements)
+
+---
+
+## 🔍 Overview
+
+This system provides a centralized portal for universities to manage their exam infrastructure. Admins can create quiz categories, build quizzes with MCQ-style questions, publish them for students, and track performance — all through a clean, role-based interface.
 
 ---
 
 ## ✨ Features
 
-- 📅 Real-time exam schedule creation & publishing  
-- 📄 Live results for students & faculty  
-- 🔐 Secure admin login with role-based access  
-- 🗂️ Centralized student & quiz record management  
-- 📊 Quiz attempt tracking and performance view  
-- 🖥️ Fully responsive, clean UI  
-- 🔍 Easy search and filter for quizzes and results  
+### 👨‍💼 Admin
+- Secure login with JWT-based role-based access control
+- Create, update, and delete **quiz categories**
+- Create, update, delete, and activate/deactivate **quizzes**
+- Add and manage **MCQ questions** (with 4 options and answer key)
+- View all quizzes and their associated questions
+
+### 👨‍🎓 Student
+- Register and log in securely
+- Browse active quizzes by category
+- Read pre-quiz instructions
+- Attempt timed quizzes with MCQs
+- View results after submission
+
+### 🔐 Security
+- Spring Security + JWT (stateless sessions)
+- BCrypt password encoding
+- Route guards (`AdminGuard`, `NormalGuard`) on the Angular frontend
+- Public routes: `/generate-token`, `/user/` (registration)
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer      | Technology            |
-|------------|------------------------|
-| Frontend   | HTML, CSS, JavaScript  |
-| Backend    | Java, Spring Boot      |
-| Database   | MySQL                  |
+| Layer       | Technology                              |
+|-------------|------------------------------------------|
+| Frontend    | Angular 11, TypeScript, Angular Material |
+| Backend     | Java, Spring Boot 2.3.3, Spring Security |
+| Auth        | JWT (jjwt 0.9.0), BCrypt                |
+| ORM         | Spring Data JPA, Hibernate              |
+| Database    | MySQL 8                                 |
+| Build Tool  | Maven (Spring Boot Maven Plugin)        |
+| Dev Tools   | IntelliJ IDEA, VS Code, Git             |
+
+---
+
+## 🏗️ System Architecture| Database   | MySQL                  |
 | Tools      | Git, GitHub            |
 
 ---
